@@ -1,0 +1,407 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.auth-container {
+    background-image: url(../src/assets/Imges/Auth-bg.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.overLayer {
+    background: linear-gradient(45deg, rgba(47, 140, 96, 0.63), rgba(0, 0, 0, 0.62));
+}
+
+/* ---------------------- sidebarContainer ---------------------- */
+
+.sidebarContainer {
+    background-color: rgba(31, 38, 62, 1);
+    border-top-right-radius: 40px;
+}
+
+.sidebarContainer .ps-sidebar-container {
+    background-color: inherit;
+    height: 100%;
+}
+
+.sidebarContainer .ps-menu-button {
+    color: #fff !important;
+}
+
+.sidebarContainer .ps-menu-button:hover {
+    background-color: rgba(0, 146, 71, 0.1) !important;
+}
+
+.sidebarContainer .ps-menu-button.active {
+    background-color: rgba(0, 146, 71, 0.1) !important;
+    border-left: rgba(0, 146, 71, 1) 3px solid;
+}
+
+.sidebarContainer .firstMenuItem .ps-menu-button:hover {
+    background-color: transparent !important;
+    border: none;
+}
+
+
+
+/*  ---------------------- header  ---------------------- */
+.bg-header {
+    background-image: url('../src/assets/Header-bg.svg');
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 146, 71, 1);
+}
+
+.secandTitle {
+    color: rgba(223, 224, 224, 1);
+    font-size: 2rem;
+}
+
+/* ---------------------- notFound  ---------------------- */
+.bg-notFound {
+    background-image: url('../src/assets/NotFound-bg.svg');
+    background-size: cover;
+}
+
+.bg-notFound .content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.bg-notFound .content h3 {
+    color: rgb(0, 146, 71);
+}
+
+
+/* ---------------------- screen-readers ----------------------*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+.nav-logo-img img {
+    width: 12%;
+    background-color: rgb(244, 206, 155);
+}
+
+/* ---------------------- login ---------------------- */
+.login-links .register-link, .login-links .forget-link {
+    transition: all .6s;
+}
+
+.login-links .register-link:hover {
+    color: #198754 !important;
+    text-decoration: underline !important;
+}
+
+.login-links .forget-link:hover {
+    color: black !important;
+    text-decoration: underline !important;
+}
+
+/*  ---------------------- shared List  ---------------------- */
+
+.table-container tbody .dropdown-toggle::after {
+    border-top: none !important;
+}
+
+.table-container tbody tr th {
+    padding: .9rem 0px !important;
+}
+
+.custom-rounded-header {
+    background-color: rgba(226, 229, 235, 1) !important;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+.custom-rounded-header th {
+    background-color: rgba(226, 229, 235, 1) !important;
+    border-bottom: none;
+    padding: 1.5rem 0rem;
+    white-space: nowrap;
+}
+
+.custom-rounded-header th:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.custom-rounded-header th:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: rgba(248, 249, 251, 1);
+}
+
+@media screen and (max-width: 575.98px) {
+    .table-container {
+        padding: 0 1rem;
+        overflow-x: hidden;
+    }
+
+    .table-container table {
+        width: 100%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+
+    .table-container table tbody, .table-container table thead {
+        width: 100%;
+
+        .table-email, .table-img, .table-creationDate, .table-Description {
+            display: none;
+        }
+    }
+
+    .custom-rounded-header th,
+    .table th,
+    .table td {
+        padding: 0.5rem 0.25rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .dropdown-toggle {
+        width: 100%;
+        text-align: right;
+    }
+}
+
+/* Small Devices (Tablets, 576px and up) */
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    .table-container {
+        padding: 0 1.5rem;
+        width: 65%;
+        margin: auto;
+    }
+
+    .table-container table {
+        width: 85%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+    .custom-rounded-header th,
+    .table th,
+    .table td {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .table-container {
+        padding: 0 2rem;
+    }
+
+    .table-container table {
+        width: 90%;
+        margin: auto;
+        overflow-x: hidden;
+    }
+
+    .custom-rounded-header th,
+    .table th,
+    .table td {
+        padding: 0.75rem 0.6rem;
+        font-size: 1rem;
+    }
+}
+
+/* Large Devices (Desktops, 992px and up) */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+    .table-container {
+        padding: 0 3rem;
+    }
+
+    .table-container table {
+        width: 100%;
+    }
+
+    .custom-rounded-header th,
+    .table th,
+    .table td {
+        padding: 1rem 0.75rem;
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra Large Devices (Large Desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .table-container {
+        padding: 0 4rem;
+    }
+
+    .table-container table {
+        width: 100%;
+    }
+
+    .custom-rounded-header th,
+    .table th,
+    .table td {
+        padding: 1.25rem 1rem;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* ---------------------- RecipesList ---------------------- */
+.img-list {
+    width: 50px;
+}
+
+/* ---------------------- component-title ---------------------- */
+
+.bg-component-title {
+    background-color: rgba(240, 255, 239, 1);
+}
+
+
+/* ----------------------recipse Data  ----------------------*/
+.bg-recipse-input {
+    background-color: rgba(247, 247, 247, 1) !important;
+}
+
+
+/*  ---------------------- Upload-img-container  ---------------------- */
+.Upload-img .guZdik {
+    background: rgba(241, 255, 240, 1);
+    padding: 2rem !important;
+}
+
+.Upload-img .guZdik {
+    max-width: none;
+    border-color: rgba(0, 146, 71, 1);
+}
+
+.Upload-img svg, .Upload-img .file-types {
+    display: none;
+}
+
+.Upload-img .jWkLDY>span {
+    font-size: 1rem;
+}
+
+.Upload-img .kFhUBM span {
+    text-decoration: none;
+}
+
+.Upload-img .sc-eqUAAy {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .Upload-img {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* ---------------------- pagination ---------------------- */
+
+.navigationContainer {
+    cursor: pointer !important;
+}
+
+.pagination .page-item .page-link {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: rgba(226, 229, 235, 1);
+    border-color: rgba(226, 229, 235, 1);
+}
+
+.pagination .page-item.active .page-link:hover {
+    background-color: rgba(226, 229, 235, 1);
+    border-color: rgba(226, 229, 235, 1);
+}
+
+.pagination .page-item.disabled .page-link {
+    background-color: #f8f9fa;
+    color: #6c757d;
+    pointer-events: none;
+}
+
+.pagination .page-item .page-link:hover {
+    background-color: rgba(226, 229, 235, 0.5);
+    border-color: rgba(226, 229, 235, 0.5);
+}
+
+
+/* ----------------------  changPass ----------------------  */
+
+@media (max-width: 576px) {
+    .contaent-changPass {
+        padding: 20px;
+    }
+
+    .img-logo img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contaent-changPass {
+        max-width: 450px;
+    }
+}
+
+.container-changePass {
+    .contaent-changPass {
+        padding: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+
+    .input-group-text {
+        background-color: #e9ecef;
+        border-radius: 0.25rem 0 0 0.25rem;
+    }
+
+    .form-control {
+        border-radius: 0 0.25rem 0.25rem 0;
+    }
+
+    .input-group-text.bg-transparent {
+        border: none;
+    }
+
+    .input-group .form-control {
+        border-right: 0;
+    }
+
+    .input-group .input-group-text:last-child {
+        border-left: 0;
+    }
+}
+
+
+
+/* ---------------------- icon-fav ---------------------- */
