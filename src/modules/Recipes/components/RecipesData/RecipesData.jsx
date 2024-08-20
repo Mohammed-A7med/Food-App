@@ -81,9 +81,7 @@ export default function RecipesData() {
           Authorization: `Bearer ${localStorage.getItem("userToken")}`,
         },
       });
-      toast.success(
-        response.data.message || "New recipe created successfully!"
-      );
+      toast.success(status? "update recipe successfully!" : "New recipe created successfully!");
       goToRecipesList();
       getCategoriesList();
     } catch (error) {
