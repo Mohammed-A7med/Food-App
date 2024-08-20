@@ -286,6 +286,10 @@
 
 
 /*  ---------------------- Upload-img-container  ---------------------- */
+.Upload-img .dtlKip{
+    border-color: rgba(0, 146, 71, 1) !important;
+}
+
 .Upload-img .guZdik {
     background: rgba(241, 255, 240, 1);
     padding: 2rem !important;
@@ -293,7 +297,7 @@
 
 .Upload-img .guZdik {
     max-width: none;
-    border-color: rgba(0, 146, 71, 1);
+    border-color: rgba(0, 146, 71, 1) !important;
 }
 
 .Upload-img svg, .Upload-img .file-types {

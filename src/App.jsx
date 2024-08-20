@@ -27,7 +27,7 @@ import ChangePass from "./modules/Shared/components/ChangePass/ChangePass";
 import Favorites from "./modules/Recipes/components/Favorites/Favorites";
 
 function App() {
-  const routes = createHashRouter([
+  const routes = createBrowserRouter([
     {
       path: "",
       element: <AuthLayout />,
