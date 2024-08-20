@@ -286,8 +286,10 @@
 
 
 /*  ---------------------- Upload-img-container  ---------------------- */
-.Upload-img .dtlKip{
+.dtlKip{
     border-color: rgba(0, 146, 71, 1) !important;
+    max-width: none !important;
+    background: rgba(241, 255, 240, 1) !important;
 }
 
 .Upload-img .guZdik {
